@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var multiarray = [[10,9,8],[1,2,3,4],[5,6,7]];
+    document.write("multiArray = [[",multiarray[0],"],[",multiarray[1],"],[",multiarray[2],"]] <br/>");
+    var finalArray=[];
+    var newArray = iqod12(multiarray);
+    
+    function iqod12(a) {
+        for (var x=0;x<a.length;x++)
+        {
+
+
+            for (var i=0;i<a[x].length;i++)
+            {
+                finalArray.push(a[x][i])
+
+            }
+
+            if ((x+1)===(a.length)){
+                return finalArray
+            }
+        }
+    }
+    document.write("newArray is [",newArray,"] <br/>");
+    console.log(newArray)
+
+</script>
+
+
+</body>
+</html>
