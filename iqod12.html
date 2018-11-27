@@ -20,13 +20,14 @@
 
             for (var i=0;i<a[x].length;i++)
             {
-                finalArray.push(a[x][i])
+                finalArray+=(a[x][i])
 
             }
 
             if ((x+1)===(a.length)){
                 return finalArray
             }
+            finalArray+=","
         }
     }
     document.write("newArray is [",newArray,"] <br/>");
